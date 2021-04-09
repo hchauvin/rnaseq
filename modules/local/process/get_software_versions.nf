@@ -14,7 +14,7 @@ process GET_SOFTWARE_VERSIONS {
     conda     (params.enable_conda ? "conda-forge::python=3.8.3" : null)
     container "quay.io/biocontainers/python:3.8.3"
 
-    cache false
+    // cache false
 
     input:
     path versions
